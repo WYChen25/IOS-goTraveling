@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capital</key>
+	<string>{36.03,103.73,}</string>
+	<key>topLeftCoord</key>
+	<string>{42.9947,91.7976}</string>
+	<key>topRightCoord</key>
+	<string>{42.6251,108.4818}</string>
+	<key>bottomLeftCoord</key>
+	<string>{32.5300, 93.2417}</string>
+	<key>boundary</key>
+	<array>
+		<string>{42.6835, 97.1228}</string>
+		<string>{39.4163, 104.0144}</string>
+		<string>{36.0499, 108.5895}</string>
+		<string>{38.1455, 96.0594}</string>
+	</array>
+</dict>
+</plist>

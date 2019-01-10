@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ChinaMidCoord</key>
+	<string>{34.4625, 106.6593}</string>
+	<key>ChinaTopLeftCoord</key>
+	<string>{49.4264, 65.7017}</string>
+	<key>ChinaTopRightCoord</key>
+	<string>{52.1301, 136.7871}</string>
+	<key>ChinaBottomLeftCoord</key>
+	<string>{13.035425, 80.9362}</string>
+	<key>Boundary</key>
+	<array>
+		<string>{42.248211,107.144526}</string>
+		<string>{46.275365,117.204356}</string>
+		<string>{49.629747,127.911719}</string>
+		<string>{44.324134,131.050987}</string>
+		<string>{40.661613,125.532026}</string>
+		<string>{37.605930,121.294940}</string>
+		<string>{28.310593,121.449836}</string>
+		<string>{ 21.670154,111.790719}</string>
+		<string>{25.417669,98.003295}</string>
+		<string>{27.966417,86.265370}</string>
+		<string>{35.593692,80.018516}</string>
+	</array>
+</dict>
+</plist>
