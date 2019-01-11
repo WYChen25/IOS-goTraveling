@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>capital</key>
-	<string>{36.03,103.73,}</string>
+	<string>{38.03, 114.48}</string>
 	<key>topLeftCoord</key>
-	<string>{42.9947,91.7976}</string>
+	<string>{42.5799, 112.4502}</string>
 	<key>topRightCoord</key>
-	<string>{42.6251,108.4818}</string>
+	<string>{42.8072, 120.6749}</string>
 	<key>bottomLeftCoord</key>
-	<string>{32.5300, 93.2417}</string>
+	<string>{35.9990, 113.0938}</string>
 	<key>boundary</key>
 	<array/>
 </dict>

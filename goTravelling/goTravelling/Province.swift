@@ -10,6 +10,9 @@ import UIKit
 import MapKit
 import os.log
 
+//import AMapFoundationKit
+//import AMapSearchKit
+
 /*
  省份类：
  存储省份名称，在该省份存储照片的数组信息;
@@ -19,10 +22,13 @@ import os.log
 class Province :NSObject,NSCoding{
     
     //MARK:Properties
+    
     var name:String
     var photos:[Photo]?
     
     var isArrived:Bool
+    
+    //var search:AMapSearchAPI
     
     var boundary:[CLLocationCoordinate2D] = []
     
@@ -61,6 +67,7 @@ class Province :NSObject,NSCoding{
         //self.isArrived = arrived
         self.photos = photos
         self.isArrived = (self.photos != nil)
+        //self.search = AMapSearchAPI()
         
         guard let properties = Province.plist(name) as? [String : Any],
             let boundaryPoints = properties["boundary"] as? [String] else {return}
@@ -69,11 +76,21 @@ class Province :NSObject,NSCoding{
         topLeftCoordinate = Province.parseCoord(dict: properties, fieldName: "topLeftCoord")
         topRightCoordinate = Province.parseCoord(dict: properties, fieldName: "topRightCoord")
         bottomLeftCoordinate = Province.parseCoord(dict: properties, fieldName: "bottomLeftCoord")
+    
         
         let cgPoints = boundaryPoints.map { NSCoder.cgPoint(for: $0) }
         boundary = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
     }
-    
+    /*
+    func initBoundary(){
+        let request = AMapDistrictSearchRequest()
+        request.keywords = self.name
+        print(self.name)
+        request.requireExtension = true
+        print("request")
+        self.search.aMapDistrictSearch(request)
+    }
+    */
     
     //MARK: Methods
     
@@ -144,12 +161,33 @@ class Province :NSObject,NSCoding{
         let loadProvinces = NSKeyedUnarchiver.unarchiveObject(withFile: Province.ArchiveURL.path) as? [Province]
         return loadProvinces
     }
+    
+    
+    //MARK: delegate
+    /*
+    func onDistrictSearchDone(_ request: AMapDistrictSearchRequest!, response: AMapDistrictSearchResponse!) {
+        
+        for aDistrict in response.districts{
+            for subDistrict in aDistrict.districts{
+                
+                let coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(subDistrict.center.latitude), longitude:CLLocationDegrees(subDistrict.center.longitude))
+               print(coordinate)
+               self.boundary.append(coordinate)
+            }
+        }
+    }
+ */
+ 
 }
 
 
 //Global variable
 
-let provinceName = ["HeNan","JiangSu"]
+let provinceName = ["HeNan","JiangSu","GanSu","AnHui","Aomen","ChongQing","FuJian","GuangDong","GuangXi",
+                    "GuiZhou","HaiNan","HeBei","HeiLongJiang","HuBei","HuNan","JiangXi","JiLin",
+                    "LiaoNing","NeiMengGu","MingXia","QingHai","Shan3Xi","ShanDong","ShangHai",
+                    "ShanXi","SiChuan","TaiWan","TianJin","XiangGang","XinJiang","XiZang","YunNan",
+                    "ZheJiang","BeiJing"]
 
 var provinces:[Province] = []
 

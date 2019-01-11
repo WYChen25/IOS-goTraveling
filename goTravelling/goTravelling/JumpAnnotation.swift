@@ -25,7 +25,7 @@ class JumpAnnotation: NSObject,MKAnnotation {
         else{
             image = UIImage(named: "YellowLandMark")
         }
-        print(self.coordinate)
+        //print(self.coordinate)
     }
     
 }

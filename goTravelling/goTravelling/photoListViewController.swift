@@ -23,29 +23,31 @@ import MapKit
     //MARK: -Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //根据标识判断seguel种类，决定添加照片或是显示照片。
         switch(segue.identifier ?? "") {
             
-        case "AddItem":
-            os_log("Adding a new photo.", log: OSLog.default, type: .debug)
+            case "AddItem":
+                os_log("Adding a new photo.", log: OSLog.default, type: .debug)
             
-        case "ShowDetail":
-            guard let photoDetailViewController = segue.destination as? PhotoViewController else {
-                fatalError("Unexpected destination: \(segue.destination)")
-            }
+            case "ShowDetail":
+                guard let photoDetailViewController = segue.destination as? PhotoViewController else {
+                    fatalError("Unexpected destination: \(segue.destination)")
+                }
             
-            guard let selectedPhotoCell = sender as? photoTableViewCell else {
-                fatalError("Unexpected sender: \(String(describing: sender))")
-            }
+                guard let selectedPhotoCell = sender as? photoTableViewCell else {
+                    fatalError("Unexpected sender: \(String(describing: sender))")
+                }
             
-            guard let indexPath = photoList.indexPath(for: selectedPhotoCell) else {
-                fatalError("The selected cell is not being displayed by the table")
-            }
+                guard let indexPath = photoList.indexPath(for: selectedPhotoCell) else {
+                    fatalError("The selected cell is not being displayed by the table")
+                }
             
-            let selectedPhoto = photos[indexPath.row]
-            photoDetailViewController.photo = selectedPhoto
+                let selectedPhoto = photos[indexPath.row]
+                photoDetailViewController.photo = selectedPhoto
             
-        default:
-            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+            default:
+                fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
         }
     }
     
@@ -65,8 +67,7 @@ import MapKit
                 photos.append(photo)
                 photoList.insertRows(at: [newIndexPath], with: .automatic)
             }
-            //Save photo
-            //savePhoto()
+            
             currentProvince?.updatePhotos(photos: photos)
         }
     }
@@ -151,12 +152,14 @@ import MapKit
     }
     
     //tableView 的行数
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //print(photos.count)
         return photos.count
     }
     
     //将table cell的内容加到tableb view中
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "photoTableViewCell"
@@ -175,7 +178,9 @@ import MapKit
         return cell
     }
     
+    
     //view可左滑删除
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             photos.remove(at: indexPath.row)
@@ -187,12 +192,14 @@ import MapKit
         return true
     }
     
+    
     //MARK: mapView Delegate
+    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MKPolygon {
             let polygonView = MKPolygonRenderer(overlay: overlay)
             polygonView.lineWidth = CGFloat(3.0)
-            polygonView.strokeColor = UIColor.white
+            polygonView.strokeColor = UIColor.black
             return polygonView
         }
         return MKOverlayRenderer()

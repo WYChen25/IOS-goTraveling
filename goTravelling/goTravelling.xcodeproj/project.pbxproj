@@ -13,6 +13,47 @@
 		4E64D9A321B01831003637F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E64D9A221B01831003637F3 /* Assets.xcassets */; };
 		4E64D9A621B01831003637F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E64D9A421B01831003637F3 /* LaunchScreen.storyboard */; };
 		4E64D9B121B01831003637F3 /* goTravellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D9B021B01831003637F3 /* goTravellingTests.swift */; };
+		4E6EBA0021E866480087B3FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EB9FF21E866480087B3FB /* UIKit.framework */; };
+		4E6EBA0221E866500087B3FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EBA0121E866500087B3FB /* Foundation.framework */; };
+		4E6EBA0421E866580087B3FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EBA0321E866580087B3FB /* CoreGraphics.framework */; };
+		4E6EBA0621E866690087B3FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EBA0521E866690087B3FB /* QuartzCore.framework */; };
+		4E6EBA0821E866760087B3FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EBA0721E866760087B3FB /* CoreLocation.framework */; };
+		4E6EBA0921E8667F0087B3FB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EB9EF21E860840087B3FB /* CoreTelephony.framework */; };
+		4E6EBA0B21E8669B0087B3FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EBA0A21E8669B0087B3FB /* SystemConfiguration.framework */; };
+		4E6EBA0C21E866B00087B3FB /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EB9F321E8609D0087B3FB /* libz.1.1.3.tbd */; };
+		4E6EBA0E21E866C80087B3FB /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EBA0D21E866C80087B3FB /* libc++.1.tbd */; };
+		4E6EBA1021E866D00087B3FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6EBA0F21E866D00087B3FB /* Security.framework */; };
+		4E6EBA1221E884470087B3FB /* BeiJing.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1121E884470087B3FB /* BeiJing.plist */; };
+		4E6EBA3321E895800087B3FB /* ShanDong.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1521E8957D0087B3FB /* ShanDong.plist */; };
+		4E6EBA3421E895800087B3FB /* Shan3Xi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1621E8957D0087B3FB /* Shan3Xi.plist */; };
+		4E6EBA3521E895800087B3FB /* JiangXi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1721E8957D0087B3FB /* JiangXi.plist */; };
+		4E6EBA3621E895800087B3FB /* TaiWan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1821E8957D0087B3FB /* TaiWan.plist */; };
+		4E6EBA3721E895800087B3FB /* HaiNan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1921E8957D0087B3FB /* HaiNan.plist */; };
+		4E6EBA3821E895800087B3FB /* TianJin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1A21E8957D0087B3FB /* TianJin.plist */; };
+		4E6EBA3921E895800087B3FB /* XiZang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1B21E8957D0087B3FB /* XiZang.plist */; };
+		4E6EBA3A21E895800087B3FB /* HuBei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1C21E8957D0087B3FB /* HuBei.plist */; };
+		4E6EBA3B21E895800087B3FB /* YunNan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1D21E8957D0087B3FB /* YunNan.plist */; };
+		4E6EBA3C21E895800087B3FB /* AoMen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1E21E8957D0087B3FB /* AoMen.plist */; };
+		4E6EBA3D21E895800087B3FB /* ChongQing.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA1F21E8957D0087B3FB /* ChongQing.plist */; };
+		4E6EBA3E21E895800087B3FB /* JiLin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2021E8957D0087B3FB /* JiLin.plist */; };
+		4E6EBA3F21E895800087B3FB /* ShanXi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2121E8957D0087B3FB /* ShanXi.plist */; };
+		4E6EBA4021E895800087B3FB /* FuJian.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2221E8957E0087B3FB /* FuJian.plist */; };
+		4E6EBA4121E895800087B3FB /* GuiZhou.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2321E8957E0087B3FB /* GuiZhou.plist */; };
+		4E6EBA4221E895800087B3FB /* GuangXi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2421E8957E0087B3FB /* GuangXi.plist */; };
+		4E6EBA4321E895800087B3FB /* AnHui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2521E8957E0087B3FB /* AnHui.plist */; };
+		4E6EBA4421E895800087B3FB /* GuangDong.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2621E8957E0087B3FB /* GuangDong.plist */; };
+		4E6EBA4521E895800087B3FB /* HuNan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2721E8957E0087B3FB /* HuNan.plist */; };
+		4E6EBA4621E895800087B3FB /* XiangGang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2821E8957E0087B3FB /* XiangGang.plist */; };
+		4E6EBA4721E895800087B3FB /* QingHai.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2921E8957E0087B3FB /* QingHai.plist */; };
+		4E6EBA4821E895800087B3FB /* SiChuan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2A21E8957E0087B3FB /* SiChuan.plist */; };
+		4E6EBA4921E895800087B3FB /* XinJiang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2B21E8957E0087B3FB /* XinJiang.plist */; };
+		4E6EBA4A21E895800087B3FB /* HeBei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2C21E8957F0087B3FB /* HeBei.plist */; };
+		4E6EBA4B21E895800087B3FB /* HeiLongJiang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2D21E8957F0087B3FB /* HeiLongJiang.plist */; };
+		4E6EBA4C21E895800087B3FB /* NeiMengGu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2E21E8957F0087B3FB /* NeiMengGu.plist */; };
+		4E6EBA4D21E895800087B3FB /* ShangHai.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA2F21E8957F0087B3FB /* ShangHai.plist */; };
+		4E6EBA4E21E895800087B3FB /* NingXia.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA3021E8957F0087B3FB /* NingXia.plist */; };
+		4E6EBA4F21E895800087B3FB /* LiaoNing.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA3121E8957F0087B3FB /* LiaoNing.plist */; };
+		4E6EBA5021E895800087B3FB /* ZheJiang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EBA3221E895800087B3FB /* ZheJiang.plist */; };
 		4E91370721B5620F00D82A1B /* JiangSu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E91370621B5620F00D82A1B /* JiangSu.plist */; };
 		4EDE5EBE21B262FE00A727BF /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDE5EBD21B262FE00A727BF /* Province.swift */; };
 		4EDE5EC021B26B3C00A727BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDE5EBF21B26B3C00A727BF /* MapViewController.swift */; };
@@ -48,6 +89,51 @@
 		4E64D9AC21B01831003637F3 /* goTravellingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goTravellingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E64D9B021B01831003637F3 /* goTravellingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goTravellingTests.swift; sourceTree = "<group>"; };
 		4E64D9B221B01831003637F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E6EB9E521E7355F0087B3FB /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		4E6EB9E621E7355F0087B3FB /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		4E6EB9EF21E860840087B3FB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4E6EB9F121E860920087B3FB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4E6EB9F321E8609D0087B3FB /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		4E6EB9F521E861110087B3FB /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		4E6EB9FF21E866480087B3FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4E6EBA0121E866500087B3FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4E6EBA0321E866580087B3FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4E6EBA0521E866690087B3FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4E6EBA0721E866760087B3FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4E6EBA0A21E8669B0087B3FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4E6EBA0D21E866C80087B3FB /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		4E6EBA0F21E866D00087B3FB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4E6EBA1121E884470087B3FB /* BeiJing.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BeiJing.plist; sourceTree = "<group>"; };
+		4E6EBA1521E8957D0087B3FB /* ShanDong.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShanDong.plist; sourceTree = "<group>"; };
+		4E6EBA1621E8957D0087B3FB /* Shan3Xi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Shan3Xi.plist; sourceTree = "<group>"; };
+		4E6EBA1721E8957D0087B3FB /* JiangXi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JiangXi.plist; sourceTree = "<group>"; };
+		4E6EBA1821E8957D0087B3FB /* TaiWan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TaiWan.plist; sourceTree = "<group>"; };
+		4E6EBA1921E8957D0087B3FB /* HaiNan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HaiNan.plist; sourceTree = "<group>"; };
+		4E6EBA1A21E8957D0087B3FB /* TianJin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TianJin.plist; sourceTree = "<group>"; };
+		4E6EBA1B21E8957D0087B3FB /* XiZang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XiZang.plist; sourceTree = "<group>"; };
+		4E6EBA1C21E8957D0087B3FB /* HuBei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HuBei.plist; sourceTree = "<group>"; };
+		4E6EBA1D21E8957D0087B3FB /* YunNan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YunNan.plist; sourceTree = "<group>"; };
+		4E6EBA1E21E8957D0087B3FB /* AoMen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AoMen.plist; sourceTree = "<group>"; };
+		4E6EBA1F21E8957D0087B3FB /* ChongQing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChongQing.plist; sourceTree = "<group>"; };
+		4E6EBA2021E8957D0087B3FB /* JiLin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JiLin.plist; sourceTree = "<group>"; };
+		4E6EBA2121E8957D0087B3FB /* ShanXi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShanXi.plist; sourceTree = "<group>"; };
+		4E6EBA2221E8957E0087B3FB /* FuJian.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FuJian.plist; sourceTree = "<group>"; };
+		4E6EBA2321E8957E0087B3FB /* GuiZhou.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GuiZhou.plist; sourceTree = "<group>"; };
+		4E6EBA2421E8957E0087B3FB /* GuangXi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GuangXi.plist; sourceTree = "<group>"; };
+		4E6EBA2521E8957E0087B3FB /* AnHui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnHui.plist; sourceTree = "<group>"; };
+		4E6EBA2621E8957E0087B3FB /* GuangDong.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GuangDong.plist; sourceTree = "<group>"; };
+		4E6EBA2721E8957E0087B3FB /* HuNan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HuNan.plist; sourceTree = "<group>"; };
+		4E6EBA2821E8957E0087B3FB /* XiangGang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XiangGang.plist; sourceTree = "<group>"; };
+		4E6EBA2921E8957E0087B3FB /* QingHai.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QingHai.plist; sourceTree = "<group>"; };
+		4E6EBA2A21E8957E0087B3FB /* SiChuan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SiChuan.plist; sourceTree = "<group>"; };
+		4E6EBA2B21E8957E0087B3FB /* XinJiang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XinJiang.plist; sourceTree = "<group>"; };
+		4E6EBA2C21E8957F0087B3FB /* HeBei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeBei.plist; sourceTree = "<group>"; };
+		4E6EBA2D21E8957F0087B3FB /* HeiLongJiang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeiLongJiang.plist; sourceTree = "<group>"; };
+		4E6EBA2E21E8957F0087B3FB /* NeiMengGu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NeiMengGu.plist; sourceTree = "<group>"; };
+		4E6EBA2F21E8957F0087B3FB /* ShangHai.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShangHai.plist; sourceTree = "<group>"; };
+		4E6EBA3021E8957F0087B3FB /* NingXia.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NingXia.plist; sourceTree = "<group>"; };
+		4E6EBA3121E8957F0087B3FB /* LiaoNing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LiaoNing.plist; sourceTree = "<group>"; };
+		4E6EBA3221E895800087B3FB /* ZheJiang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZheJiang.plist; sourceTree = "<group>"; };
 		4E91370621B5620F00D82A1B /* JiangSu.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = JiangSu.plist; sourceTree = "<group>"; };
 		4EDE5EBD21B262FE00A727BF /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
 		4EDE5EBF21B26B3C00A727BF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +153,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6EBA1021E866D00087B3FB /* Security.framework in Frameworks */,
+				4E6EBA0E21E866C80087B3FB /* libc++.1.tbd in Frameworks */,
+				4E6EBA0C21E866B00087B3FB /* libz.1.1.3.tbd in Frameworks */,
+				4E6EBA0B21E8669B0087B3FB /* SystemConfiguration.framework in Frameworks */,
+				4E6EBA0921E8667F0087B3FB /* CoreTelephony.framework in Frameworks */,
+				4E6EBA0821E866760087B3FB /* CoreLocation.framework in Frameworks */,
+				4E6EBA0621E866690087B3FB /* QuartzCore.framework in Frameworks */,
+				4E6EBA0421E866580087B3FB /* CoreGraphics.framework in Frameworks */,
+				4E6EBA0221E866500087B3FB /* Foundation.framework in Frameworks */,
+				4E6EBA0021E866480087B3FB /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +182,7 @@
 				4E64D99A21B0182F003637F3 /* goTravelling */,
 				4E64D9AF21B01831003637F3 /* goTravellingTests */,
 				4E64D99921B0182F003637F3 /* Products */,
+				4E6EB9E421E7355E0087B3FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,13 +226,65 @@
 			path = goTravellingTests;
 			sourceTree = "<group>";
 		};
+		4E6EB9E421E7355E0087B3FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E6EBA0F21E866D00087B3FB /* Security.framework */,
+				4E6EBA0D21E866C80087B3FB /* libc++.1.tbd */,
+				4E6EBA0A21E8669B0087B3FB /* SystemConfiguration.framework */,
+				4E6EBA0721E866760087B3FB /* CoreLocation.framework */,
+				4E6EBA0521E866690087B3FB /* QuartzCore.framework */,
+				4E6EBA0321E866580087B3FB /* CoreGraphics.framework */,
+				4E6EBA0121E866500087B3FB /* Foundation.framework */,
+				4E6EB9FF21E866480087B3FB /* UIKit.framework */,
+				4E6EB9F521E861110087B3FB /* AMapSearchKit.framework */,
+				4E6EB9F321E8609D0087B3FB /* libz.1.1.3.tbd */,
+				4E6EB9F121E860920087B3FB /* libc++.tbd */,
+				4E6EB9EF21E860840087B3FB /* CoreTelephony.framework */,
+				4E6EB9E521E7355F0087B3FB /* AMapFoundationKit.framework */,
+				4E6EB9E621E7355F0087B3FB /* MAMapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4EDE5EC621B26F0000A727BF /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4E6EBA2521E8957E0087B3FB /* AnHui.plist */,
+				4E6EBA1E21E8957D0087B3FB /* AoMen.plist */,
+				4E6EBA1F21E8957D0087B3FB /* ChongQing.plist */,
+				4E6EBA2221E8957E0087B3FB /* FuJian.plist */,
+				4E6EBA2621E8957E0087B3FB /* GuangDong.plist */,
+				4E6EBA2421E8957E0087B3FB /* GuangXi.plist */,
+				4E6EBA2321E8957E0087B3FB /* GuiZhou.plist */,
+				4E6EBA1921E8957D0087B3FB /* HaiNan.plist */,
+				4E6EBA2C21E8957F0087B3FB /* HeBei.plist */,
+				4E6EBA2D21E8957F0087B3FB /* HeiLongJiang.plist */,
+				4E6EBA1C21E8957D0087B3FB /* HuBei.plist */,
+				4E6EBA2721E8957E0087B3FB /* HuNan.plist */,
+				4E6EBA1721E8957D0087B3FB /* JiangXi.plist */,
+				4E6EBA2021E8957D0087B3FB /* JiLin.plist */,
+				4E6EBA3121E8957F0087B3FB /* LiaoNing.plist */,
+				4E6EBA2E21E8957F0087B3FB /* NeiMengGu.plist */,
+				4E6EBA3021E8957F0087B3FB /* NingXia.plist */,
+				4E6EBA2921E8957E0087B3FB /* QingHai.plist */,
+				4E6EBA1621E8957D0087B3FB /* Shan3Xi.plist */,
+				4E6EBA1521E8957D0087B3FB /* ShanDong.plist */,
+				4E6EBA2F21E8957F0087B3FB /* ShangHai.plist */,
+				4E6EBA2121E8957D0087B3FB /* ShanXi.plist */,
+				4E6EBA2A21E8957E0087B3FB /* SiChuan.plist */,
+				4E6EBA1821E8957D0087B3FB /* TaiWan.plist */,
+				4E6EBA1A21E8957D0087B3FB /* TianJin.plist */,
+				4E6EBA2821E8957E0087B3FB /* XiangGang.plist */,
+				4E6EBA2B21E8957E0087B3FB /* XinJiang.plist */,
+				4E6EBA1B21E8957D0087B3FB /* XiZang.plist */,
+				4E6EBA1D21E8957D0087B3FB /* YunNan.plist */,
+				4E6EBA3221E895800087B3FB /* ZheJiang.plist */,
 				4EDE5EC721B26F1400A727BF /* China.plist */,
 				4EDE5ECB21B398BC00A727BF /* HeNan.plist */,
 				4EDE5ECD21B3993C00A727BF /* GanSu.plist */,
 				4E91370621B5620F00D82A1B /* JiangSu.plist */,
+				4E6EBA1121E884470087B3FB /* BeiJing.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -221,13 +370,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6EBA4921E895800087B3FB /* XinJiang.plist in Resources */,
+				4E6EBA4F21E895800087B3FB /* LiaoNing.plist in Resources */,
 				4E64D9A621B01831003637F3 /* LaunchScreen.storyboard in Resources */,
 				4E64D9A321B01831003637F3 /* Assets.xcassets in Resources */,
+				4E6EBA4121E895800087B3FB /* GuiZhou.plist in Resources */,
+				4E6EBA4521E895800087B3FB /* HuNan.plist in Resources */,
+				4E6EBA3E21E895800087B3FB /* JiLin.plist in Resources */,
+				4E6EBA4D21E895800087B3FB /* ShangHai.plist in Resources */,
+				4E6EBA4021E895800087B3FB /* FuJian.plist in Resources */,
+				4E6EBA4421E895800087B3FB /* GuangDong.plist in Resources */,
+				4E6EBA1221E884470087B3FB /* BeiJing.plist in Resources */,
+				4E6EBA3F21E895800087B3FB /* ShanXi.plist in Resources */,
+				4E6EBA4221E895800087B3FB /* GuangXi.plist in Resources */,
+				4E6EBA4821E895800087B3FB /* SiChuan.plist in Resources */,
+				4E6EBA4B21E895800087B3FB /* HeiLongJiang.plist in Resources */,
+				4E6EBA3621E895800087B3FB /* TaiWan.plist in Resources */,
+				4E6EBA5021E895800087B3FB /* ZheJiang.plist in Resources */,
 				4EDE5ECE21B3993C00A727BF /* GanSu.plist in Resources */,
+				4E6EBA4621E895800087B3FB /* XiangGang.plist in Resources */,
+				4E6EBA3421E895800087B3FB /* Shan3Xi.plist in Resources */,
+				4E6EBA4A21E895800087B3FB /* HeBei.plist in Resources */,
+				4E6EBA3921E895800087B3FB /* XiZang.plist in Resources */,
 				4EDE5EC821B26F1400A727BF /* China.plist in Resources */,
+				4E6EBA3321E895800087B3FB /* ShanDong.plist in Resources */,
 				4E64D9A121B0182F003637F3 /* Main.storyboard in Resources */,
+				4E6EBA3D21E895800087B3FB /* ChongQing.plist in Resources */,
+				4E6EBA3B21E895800087B3FB /* YunNan.plist in Resources */,
+				4E6EBA3C21E895800087B3FB /* AoMen.plist in Resources */,
+				4E6EBA3521E895800087B3FB /* JiangXi.plist in Resources */,
 				4E91370721B5620F00D82A1B /* JiangSu.plist in Resources */,
 				4EDE5ECC21B398BC00A727BF /* HeNan.plist in Resources */,
+				4E6EBA4321E895800087B3FB /* AnHui.plist in Resources */,
+				4E6EBA3821E895800087B3FB /* TianJin.plist in Resources */,
+				4E6EBA4C21E895800087B3FB /* NeiMengGu.plist in Resources */,
+				4E6EBA3721E895800087B3FB /* HaiNan.plist in Resources */,
+				4E6EBA4E21E895800087B3FB /* NingXia.plist in Resources */,
+				4E6EBA4721E895800087B3FB /* QingHai.plist in Resources */,
+				4E6EBA3A21E895800087B3FB /* HuBei.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +598,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCR3L6C62B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = goTravelling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,6 +620,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCR3L6C62B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = goTravelling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

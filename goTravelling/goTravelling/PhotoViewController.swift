@@ -13,30 +13,34 @@ class PhotoViewController: UIViewController,UITextFieldDelegate,UIImagePickerCon
     
     //MARK:Properties
     
+    // the components of UIView
     @IBOutlet weak var photoNameTextField: UITextField!
     @IBOutlet weak var travelPhoto: UIImageView!
     @IBOutlet weak var thinkTexView: UITextView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     /*
-     This value is either passed by `MealTableViewController` in `prepare(for:sender:)`
-     or constructed as part of adding a new meal.
+     This value is either passed by `PhotoTableViewController` in `prepare(for:sender:)`
+     or constructed as part of adding a new photo.
      */
     var photo:Photo?
     
-    //MARK: Help Properties
+    //help properties
     var flag = false
     var flagNameText = false
     var str = String.init();
     
+    
     //MARK: ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //init delegate
         photoNameTextField.delegate = self
         thinkTexView.delegate = self
         
-        //setup meals if editing an exiting meal
+        //setup photos if editing an exiting province（the province has been marked）
         if let photo = photo {
             navigationItem.title = photo.name
             photoNameTextField.text = photo.name
@@ -45,24 +49,32 @@ class PhotoViewController: UIViewController,UITextFieldDelegate,UIImagePickerCon
         }
     }
     
+    
     //MARK:TextField delegate
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
         //Hiden keyboard
         textField.resignFirstResponder();
         return true;
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        //save button is valid when you has done your input
         saveButton.isEnabled = true
-        //默认textField内容为“no name photo”
+        
+        //默认textField内容为“no name photo”,不为空
         if photoNameTextField.text! == "" {
             photoNameTextField.text = "no name photo"
             flagNameText = false
         }
+        
         navigationItem.title = photoNameTextField.text
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
+        
         //saveButton is not valid when you input something
         saveButton.isEnabled = false
         if !flagNameText {
@@ -71,8 +83,11 @@ class PhotoViewController: UIViewController,UITextFieldDelegate,UIImagePickerCon
         }
     }
     
+    
     //MARK:UIImagePickController delegate
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
         //dismiss the picker if the user cancle
         dismiss(animated: true, completion: nil)
     }
@@ -88,16 +103,23 @@ class PhotoViewController: UIViewController,UITextFieldDelegate,UIImagePickerCon
         dismiss(animated: true, completion:nil)
     }
     
+    
     //MARK:TextView delegate
+    
     func textViewDidBeginEditing(_ textView: UITextView) {
+        
         //开始编辑时textView上移防止被键盘遮挡
         UIView.beginAnimations("animations", context: nil)
+        
         //设置动画时长
         UIView.setAnimationDuration(0.2)
+        
         //从当前位置移动
         UIView.setAnimationBeginsFromCurrentState(true)
+        
         //移动距离
         self.view.frame = CGRect.init(x: self.view.frame.origin.x, y: self.view.frame.origin.y-310, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        
         //动画结束
         UIView.commitAnimations()
         
@@ -162,7 +184,9 @@ class PhotoViewController: UIViewController,UITextFieldDelegate,UIImagePickerCon
         photo = Photo(name: name, image: image, message: message)
     }
     
-    //MARK:Actions
+    
+    //MARK:self methods
+    
     //从相册选择照片
     @IBAction func pickImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         //Hiden keyboard
@@ -180,11 +204,6 @@ class PhotoViewController: UIViewController,UITextFieldDelegate,UIImagePickerCon
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-    
-    //MARK: Private Methods
-    
-    
-    
     
 }
 

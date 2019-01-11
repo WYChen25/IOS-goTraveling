@@ -9,6 +9,7 @@
 import UIKit
 
 class photoTableViewCell: UITableViewCell {
+    
     //MARK: Properties
     @IBOutlet weak var photoName: UILabel!
     @IBOutlet weak var photoView: UIImageView!

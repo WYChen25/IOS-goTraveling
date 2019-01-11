@@ -46,6 +46,7 @@ class MapViewController: UIViewController {
     }
 
     //MARK: View did load
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -79,8 +80,11 @@ class MapViewController: UIViewController {
             provinces = loadProvinces
         }
         else {
+ 
             for name in provinceName {
-                provinces.append(Province(name: name,photos:nil))
+                var province = Province(name: name,photos:nil)
+                //province.initBoundary()
+                provinces.append(province)
             }
         }
     }
@@ -135,8 +139,10 @@ class MapViewController: UIViewController {
     
 }
 
-//MapView Delegate
+//Mark：MapView Delegate
+
 extension MapViewController:MKMapViewDelegate {
+    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MKPolyline {
             let lineView = MKPolylineRenderer(overlay: overlay)
@@ -171,6 +177,7 @@ extension MapViewController:MKMapViewDelegate {
         
         return MKOverlayRenderer()
     }
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let jumpAnnotation = annotation as? JumpAnnotation {
             

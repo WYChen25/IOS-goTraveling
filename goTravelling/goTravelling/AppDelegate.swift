@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import AMapFoundationKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let navigationController = UINavigationController.init(rootViewController: MapViewController() as? UIViewController ?? UIViewController())
         //self.window = UIWindow.init()
         //window?.rootViewController = navigationController
+        
+        //AMapServices.shared()?.apiKey = "1001b6fc5daa0d3bb95dc9f76ba47e64"
         
         return true
     }
