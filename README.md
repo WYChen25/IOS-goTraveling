@@ -22,19 +22,7 @@
 - 多出去旅行，努力把更多的小旗染红吧！
 
 ## 代码设计：
-```mermaid
-graph LR
-A[mapView]-->B{userAction}
-B-->|new|C[wait to add photo]
-B-->|has come|D[show exist photos]
-C-->E[provinceView]
-D-->E
-E-->F{userAction}
-F-->|choose photo|G[show exist photo]
-F-->|choose add|H[add photo]
-G-->I[PhotoView]
-H-->I
-```
+![](https://ws1.sinaimg.cn/large/006tNc79gy1fz2xgpq7blj319s0i40v3.jpg)
 
 - mapView负责加载省份信息，如果用户是第一次使用则创建所有省份信息并保存，默认所有省份为未到达状态。之后每次都加载本地信息。对用户是否到达地分别进行不同的处理。
 - 河南省和江苏省为尝试进行的填充处理，效果理想。定义继承自MKPolygon的MyPolygon来区分填充颜色，对到达过的省份填充红色，否则为白色。
