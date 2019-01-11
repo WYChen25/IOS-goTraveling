@@ -30,6 +30,8 @@ class Province :NSObject,NSCoding{
     
     //var search:AMapSearchAPI
     
+    //地理位置信息
+    
     var boundary:[CLLocationCoordinate2D] = []
     
     var capital = CLLocationCoordinate2D()
@@ -69,6 +71,8 @@ class Province :NSObject,NSCoding{
         self.isArrived = (self.photos != nil)
         //self.search = AMapSearchAPI()
         
+        //从plist文件读取地理信息
+        
         guard let properties = Province.plist(name) as? [String : Any],
             let boundaryPoints = properties["boundary"] as? [String] else {return}
         capital = Province.parseCoord(dict: properties, fieldName: "capital")
@@ -76,12 +80,12 @@ class Province :NSObject,NSCoding{
         topLeftCoordinate = Province.parseCoord(dict: properties, fieldName: "topLeftCoord")
         topRightCoordinate = Province.parseCoord(dict: properties, fieldName: "topRightCoord")
         bottomLeftCoordinate = Province.parseCoord(dict: properties, fieldName: "bottomLeftCoord")
-    
         
         let cgPoints = boundaryPoints.map { NSCoder.cgPoint(for: $0) }
         boundary = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
     }
     /*
+    //使用高德API获取地图边界并初始化给省份。
     func initBoundary(){
         let request = AMapDistrictSearchRequest()
         request.keywords = self.name
@@ -101,7 +105,7 @@ class Province :NSObject,NSCoding{
     }
     
     
-    //MARK: static function
+    //MARK: static function（to get message from plist dictionary）
     
     static func plist(_ plist:String)->Any?{
         guard let filePath = Bundle.main.path(forResource: plist, ofType: "plist"),
@@ -123,7 +127,7 @@ class Province :NSObject,NSCoding{
     }
     
     
-    //MARK: NSCoding
+    //MARK: NSCoding(to save message)
     
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     static let ArchiveURL = DocumentsDirectory.appendingPathComponent("provinces")
@@ -183,7 +187,8 @@ class Province :NSObject,NSCoding{
 
 //Global variable
 
-let provinceName = ["HeNan","JiangSu","GanSu","AnHui","Aomen","ChongQing","FuJian","GuangDong","GuangXi",
+//all province name
+let provinceName = ["HeNan","JiangSu","GanSu","AnHui","AoMen","ChongQing","FuJian","GuangDong","GuangXi",
                     "GuiZhou","HaiNan","HeBei","HeiLongJiang","HuBei","HuNan","JiangXi","JiLin",
                     "LiaoNing","NeiMengGu","MingXia","QingHai","Shan3Xi","ShanDong","ShangHai",
                     "ShanXi","SiChuan","TaiWan","TianJin","XiangGang","XinJiang","XiZang","YunNan",
@@ -191,5 +196,6 @@ let provinceName = ["HeNan","JiangSu","GanSu","AnHui","Aomen","ChongQing","FuJia
 
 var provinces:[Province] = []
 
+//current province
 var currentProvince:Province? = nil
 

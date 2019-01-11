@@ -64,6 +64,8 @@ class MapViewController: UIViewController {
     }
     
     //MARK: INIT
+    
+    //初始化中国地理信息，用于主界面显示
     func initChina(){
         guard let properties = Province.plist("China") as? [String:Any],
             let boundaryPoints = properties["Boundary"] as? [String] else {return}
@@ -89,7 +91,7 @@ class MapViewController: UIViewController {
         }
     }
 
-    
+    //添加边界和填充区域
     func addBoundary(){
         
         mapView.addOverlay(MKPolygon(coordinates: chinaBoundary, count: chinaBoundary.count))
@@ -98,6 +100,7 @@ class MapViewController: UIViewController {
             mapView.addOverlay(MyMKPolygon(province: pro))
         }
     }
+    //添加大头针
     func addAnnotation(){
         for pro in provinces {
             let annotation = JumpAnnotation(province: pro)
@@ -105,6 +108,7 @@ class MapViewController: UIViewController {
         }
     }
     
+    //重新显示地图，刷新填充区域和大头针的显示
     func paintProvince(province:Province){
         mapView.removeAnnotations(mapView.annotations)
         mapView.removeOverlays(mapView.overlays)
@@ -117,6 +121,7 @@ class MapViewController: UIViewController {
     }
 
     
+    //点击已去过的省份，调用该方法显示已存照片
     func showDetail(province:Province){
         print("touch the button show")
         currentProvince = province
